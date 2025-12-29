@@ -13,9 +13,7 @@ jobs:
     uses: xpdustry/.github/.github/workflows/build-java.yaml@master
     with:
       java_version: 17
-      artifacts_path: build/tmp/release/*.jar
-      version_file: plugin.json
-      version_file_kind: mindustry-mod
-      publish_maven: false
-      build_command: "build release"
+      gradle_build_tasks: "build release"
+      gradle_artifacts_path: build/tmp/release/*.jar
+      gradle_publish: false
     secrets: "inherit"
