@@ -2,7 +2,7 @@ plugins {
     id("distributor.parent-conventions")
 }
 
-version = file("VERSION.txt").readText() + if (indraGit.headTag() == null) "-SNAPSHOT" else ""
+version = file("VERSION.txt").readText() + if (findProperty("release").toString().toBoolean()) "-SNAPSHOT" else ""
 group = "com.xpdustry"
 description = "The Mindustry plugin of ur dreams..."
 
