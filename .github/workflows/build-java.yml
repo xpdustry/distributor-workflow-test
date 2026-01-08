@@ -6,11 +6,12 @@ on:
     tags-ignore: [ "**" ]
   pull_request:
   workflow_dispatch:
-    release:
-      description: "Publish the project and increment version."
-      type: boolean
-      required: false
-      default: false
+    inputs:
+      release:
+        description: "Publish the project and increment version."
+        type: boolean
+        required: false
+        default: false
 
 jobs:
   build:
