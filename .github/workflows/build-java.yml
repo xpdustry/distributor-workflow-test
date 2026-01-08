@@ -19,7 +19,7 @@ jobs:
     uses: xpdustry/.github/.github/workflows/build-java.yaml@master
     with:
       java_version: 17
-      release: ${{ github.event.inputs.release }}
+      release: ${{ inputs.release }}
       gradle_build_tasks: "build release"
       gradle_publish: false
       artifacts_path: build/tmp/release/*.jar
