@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## SNAPSHOT
 
+## 4.2.3 - 2026-01-08
+
 New Features
 
 ### Something
