@@ -2,7 +2,7 @@ plugins {
     id("distributor.parent-conventions")
 }
 
-version = "4.2.5" + if (findProperty("release").toString().toBoolean()) "-SNAPSHOT" else ""
+version = "4.2.5" + if (findProperty("release").toString().toBoolean()) "" else "-SNAPSHOT"
 group = "com.xpdustry.TEST"
 description = "The Mindustry plugin of ur dreams..."
 
