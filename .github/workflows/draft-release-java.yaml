@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 env:
-  XP_SEMVER_REGEX: "^([0-9]+)\.([0-9]+)\.([0-9]+)(-([a-zA-Z][0-9a-zA-Z]*)\.([0-9]+))?(-SNAPSHOT)?$"
+  XP_SEMVER_REGEX: "^([0-9]+)\\.([0-9]+)\\.([0-9]+)(-([a-zA-Z][0-9a-zA-Z]*)\\.([0-9]+))?(-SNAPSHOT)?$"
 
 jobs:
   action:
