@@ -3,7 +3,7 @@ plugins {
 }
 
 version = file("VERSION.txt").readText() + if (findProperty("release").toString().toBoolean()) "-SNAPSHOT" else ""
-group = "com.xpdustry"
+group = "com.xpdustry.TEST"
 description = "The Mindustry plugin of ur dreams..."
 
 tasks {

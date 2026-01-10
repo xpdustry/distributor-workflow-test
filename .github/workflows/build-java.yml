@@ -21,6 +21,6 @@ jobs:
       java_version: 17
       release: ${{ github.event_name == 'workflow_dispatch' && inputs.release || false }}
       gradle_build_tasks: "build release"
-      gradle_publish: false
+      gradle_publish: true
       artifacts_path: build/tmp/release/*.jar
     secrets: "inherit"
